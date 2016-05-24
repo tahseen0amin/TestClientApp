@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E3DAC3D41CF4AFF3003C0703 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DAC3D31CF4AFF3003C0703 /* main.m */; };
 		E3DAC3D71CF4AFF3003C0703 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DAC3D61CF4AFF3003C0703 /* AppDelegate.m */; };
-		E3DAC3DA1CF4AFF3003C0703 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DAC3D91CF4AFF3003C0703 /* ViewController.m */; };
 		E3DAC3DD1CF4AFF3003C0703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3DAC3DB1CF4AFF3003C0703 /* Main.storyboard */; };
 		E3DAC3E01CF4AFF3003C0703 /* LittleBlackBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3DAC3DE1CF4AFF3003C0703 /* LittleBlackBook.xcdatamodeld */; };
 		E3DAC3E21CF4AFF3003C0703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3DAC3E11CF4AFF3003C0703 /* Assets.xcassets */; };
@@ -21,8 +20,6 @@
 		E3DAC3D31CF4AFF3003C0703 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E3DAC3D51CF4AFF3003C0703 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E3DAC3D61CF4AFF3003C0703 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E3DAC3D81CF4AFF3003C0703 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E3DAC3D91CF4AFF3003C0703 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E3DAC3DC1CF4AFF3003C0703 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3DAC3DF1CF4AFF3003C0703 /* LittleBlackBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittleBlackBook.xcdatamodel; sourceTree = "<group>"; };
 		E3DAC3E11CF4AFF3003C0703 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,15 +57,11 @@
 		E3DAC3D11CF4AFF3003C0703 /* LittleBlackBook */ = {
 			isa = PBXGroup;
 			children = (
+				E3DAC3EC1CF4B00D003C0703 /* Classes */,
+				E3DAC3EE1CF4B02B003C0703 /* StoryBoards */,
+				E3DAC3ED1CF4B020003C0703 /* Core Data */,
 				E3DAC3D51CF4AFF3003C0703 /* AppDelegate.h */,
 				E3DAC3D61CF4AFF3003C0703 /* AppDelegate.m */,
-				E3DAC3D81CF4AFF3003C0703 /* ViewController.h */,
-				E3DAC3D91CF4AFF3003C0703 /* ViewController.m */,
-				E3DAC3DB1CF4AFF3003C0703 /* Main.storyboard */,
-				E3DAC3E11CF4AFF3003C0703 /* Assets.xcassets */,
-				E3DAC3E31CF4AFF3003C0703 /* LaunchScreen.storyboard */,
-				E3DAC3E61CF4AFF3003C0703 /* Info.plist */,
-				E3DAC3DE1CF4AFF3003C0703 /* LittleBlackBook.xcdatamodeld */,
 				E3DAC3D21CF4AFF3003C0703 /* Supporting Files */,
 			);
 			path = LittleBlackBook;
@@ -77,9 +70,107 @@
 		E3DAC3D21CF4AFF3003C0703 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E3DAC3E11CF4AFF3003C0703 /* Assets.xcassets */,
+				E3DAC3E61CF4AFF3003C0703 /* Info.plist */,
 				E3DAC3D31CF4AFF3003C0703 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3DAC3EC1CF4B00D003C0703 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E3DAC3F31CF4B0F2003C0703 /* Helpers */,
+				E3DAC3F11CF4B07E003C0703 /* Modal */,
+				E3DAC3F01CF4B068003C0703 /* Controllers */,
+				E3DAC3EF1CF4B05E003C0703 /* ThirdParty */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E3DAC3ED1CF4B020003C0703 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				E3DAC3F21CF4B0CA003C0703 /* Core Data Helpers */,
+				E3DAC3DE1CF4AFF3003C0703 /* LittleBlackBook.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		E3DAC3EE1CF4B02B003C0703 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				E3DAC3DB1CF4AFF3003C0703 /* Main.storyboard */,
+				E3DAC3E31CF4AFF3003C0703 /* LaunchScreen.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
+		E3DAC3EF1CF4B05E003C0703 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ThirdParty;
+			sourceTree = "<group>";
+		};
+		E3DAC3F01CF4B068003C0703 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3DAC3F71CF4B245003C0703 /* Disliked Photos Controller */,
+				E3DAC3F61CF4B237003C0703 /* Liked Photos Controller */,
+				E3DAC3F51CF4B21B003C0703 /* Home Controller */,
+				E3DAC3F41CF4B1FA003C0703 /* TabBar Controller */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E3DAC3F11CF4B07E003C0703 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Modal;
+			sourceTree = "<group>";
+		};
+		E3DAC3F21CF4B0CA003C0703 /* Core Data Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Core Data Helpers";
+			sourceTree = "<group>";
+		};
+		E3DAC3F31CF4B0F2003C0703 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		E3DAC3F41CF4B1FA003C0703 /* TabBar Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "TabBar Controller";
+			sourceTree = "<group>";
+		};
+		E3DAC3F51CF4B21B003C0703 /* Home Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Home Controller";
+			sourceTree = "<group>";
+		};
+		E3DAC3F61CF4B237003C0703 /* Liked Photos Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Liked Photos Controller";
+			sourceTree = "<group>";
+		};
+		E3DAC3F71CF4B245003C0703 /* Disliked Photos Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Disliked Photos Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3DAC3DA1CF4AFF3003C0703 /* ViewController.m in Sources */,
 				E3DAC3D71CF4AFF3003C0703 /* AppDelegate.m in Sources */,
 				E3DAC3E01CF4AFF3003C0703 /* LittleBlackBook.xcdatamodeld in Sources */,
 				E3DAC3D41CF4AFF3003C0703 /* main.m in Sources */,
