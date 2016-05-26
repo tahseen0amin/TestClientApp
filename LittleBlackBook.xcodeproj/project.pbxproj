@@ -7,15 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E39F3FBA1CF6089F0012421D /* LBBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FB91CF6089F0012421D /* LBBLoginViewController.m */; };
+		E39F3FC01CF60E8E0012421D /* LBBAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FBF1CF60E8E0012421D /* LBBAPIManager.m */; };
+		E39F3FC31CF61A2C0012421D /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E39F3FC11CF61A2C0012421D /* Montserrat-Regular.ttf */; };
+		E39F3FC41CF61A2C0012421D /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E39F3FC21CF61A2C0012421D /* Montserrat-Bold.ttf */; };
+		E39F3FC91CF61B330012421D /* UIFont+LLBFont.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FC81CF61B330012421D /* UIFont+LLBFont.m */; };
+		E39F3FCC1CF6C4C50012421D /* LBBEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FCB1CF6C4C50012421D /* LBBEngine.m */; };
+		E39F3FCF1CF6DC770012421D /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FCE1CF6DC770012421D /* CoreDataManager.m */; };
+		E39F3FD81CF6FC6E0012421D /* LBBLikedPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FD71CF6FC6E0012421D /* LBBLikedPhotoViewController.m */; };
+		E39F3FDD1CF6FD860012421D /* LBBPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FDC1CF6FD860012421D /* LBBPhotoCell.m */; };
+		E39F3FE01CF702780012421D /* LBBDislikedPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FDF1CF702780012421D /* LBBDislikedPhotoViewController.m */; };
+		E39F3FE51CF7033F0012421D /* Media+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FE21CF7033F0012421D /* Media+CoreDataProperties.m */; };
+		E39F3FE61CF7033F0012421D /* Media.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FE41CF7033F0012421D /* Media.m */; };
+		E39F3FE91CF714B00012421D /* LBBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FE81CF714B00012421D /* LBBTabBarController.m */; };
+		E39F3FEC1CF714C90012421D /* LBBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FEB1CF714C90012421D /* LBBHomeViewController.m */; };
+		E39F3FF01CF71AD10012421D /* LBBBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FEF1CF71AD10012421D /* LBBBaseCollectionViewController.m */; };
 		E3DAC3D41CF4AFF3003C0703 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DAC3D31CF4AFF3003C0703 /* main.m */; };
 		E3DAC3D71CF4AFF3003C0703 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DAC3D61CF4AFF3003C0703 /* AppDelegate.m */; };
 		E3DAC3DD1CF4AFF3003C0703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3DAC3DB1CF4AFF3003C0703 /* Main.storyboard */; };
 		E3DAC3E01CF4AFF3003C0703 /* LittleBlackBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3DAC3DE1CF4AFF3003C0703 /* LittleBlackBook.xcdatamodeld */; };
 		E3DAC3E21CF4AFF3003C0703 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3DAC3E11CF4AFF3003C0703 /* Assets.xcassets */; };
 		E3DAC3E51CF4AFF3003C0703 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3DAC3E31CF4AFF3003C0703 /* LaunchScreen.storyboard */; };
+		FD7995D75C4194C5078809C7 /* libPods-LittleBlackBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCA5ABC3AC6654E1A3C9A7E2 /* libPods-LittleBlackBook.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A07C82F1D014B98161B7698 /* Pods-LittleBlackBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleBlackBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-LittleBlackBook/Pods-LittleBlackBook.release.xcconfig"; sourceTree = "<group>"; };
+		9CA0CED5F886FDF1BF9424B2 /* Pods-LittleBlackBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittleBlackBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LittleBlackBook/Pods-LittleBlackBook.debug.xcconfig"; sourceTree = "<group>"; };
+		DCA5ABC3AC6654E1A3C9A7E2 /* libPods-LittleBlackBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LittleBlackBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E39F3FB81CF6089F0012421D /* LBBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBLoginViewController.h; sourceTree = "<group>"; };
+		E39F3FB91CF6089F0012421D /* LBBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBLoginViewController.m; sourceTree = "<group>"; };
+		E39F3FBC1CF60AD50012421D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		E39F3FBD1CF60D570012421D /* ConfigConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigConstants.h; sourceTree = "<group>"; };
+		E39F3FBE1CF60E8E0012421D /* LBBAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBAPIManager.h; sourceTree = "<group>"; };
+		E39F3FBF1CF60E8E0012421D /* LBBAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBAPIManager.m; sourceTree = "<group>"; };
+		E39F3FC11CF61A2C0012421D /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		E39F3FC21CF61A2C0012421D /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		E39F3FC71CF61B330012421D /* UIFont+LLBFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+LLBFont.h"; sourceTree = "<group>"; };
+		E39F3FC81CF61B330012421D /* UIFont+LLBFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+LLBFont.m"; sourceTree = "<group>"; };
+		E39F3FCA1CF6C4C50012421D /* LBBEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBEngine.h; sourceTree = "<group>"; };
+		E39F3FCB1CF6C4C50012421D /* LBBEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBEngine.m; sourceTree = "<group>"; };
+		E39F3FCD1CF6DC770012421D /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataManager.h; sourceTree = "<group>"; };
+		E39F3FCE1CF6DC770012421D /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataManager.m; sourceTree = "<group>"; };
+		E39F3FD61CF6FC6E0012421D /* LBBLikedPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBLikedPhotoViewController.h; sourceTree = "<group>"; };
+		E39F3FD71CF6FC6E0012421D /* LBBLikedPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBLikedPhotoViewController.m; sourceTree = "<group>"; };
+		E39F3FDB1CF6FD860012421D /* LBBPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBPhotoCell.h; sourceTree = "<group>"; };
+		E39F3FDC1CF6FD860012421D /* LBBPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBPhotoCell.m; sourceTree = "<group>"; };
+		E39F3FDE1CF702780012421D /* LBBDislikedPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBDislikedPhotoViewController.h; sourceTree = "<group>"; };
+		E39F3FDF1CF702780012421D /* LBBDislikedPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBDislikedPhotoViewController.m; sourceTree = "<group>"; };
+		E39F3FE11CF7033F0012421D /* Media+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Media+CoreDataProperties.h"; path = "../Media+CoreDataProperties.h"; sourceTree = "<group>"; };
+		E39F3FE21CF7033F0012421D /* Media+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Media+CoreDataProperties.m"; path = "../Media+CoreDataProperties.m"; sourceTree = "<group>"; };
+		E39F3FE31CF7033F0012421D /* Media.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Media.h; path = ../Media.h; sourceTree = "<group>"; };
+		E39F3FE41CF7033F0012421D /* Media.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Media.m; path = ../Media.m; sourceTree = "<group>"; };
+		E39F3FE71CF714B00012421D /* LBBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBTabBarController.h; sourceTree = "<group>"; };
+		E39F3FE81CF714B00012421D /* LBBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBTabBarController.m; sourceTree = "<group>"; };
+		E39F3FEA1CF714C90012421D /* LBBHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBHomeViewController.h; sourceTree = "<group>"; };
+		E39F3FEB1CF714C90012421D /* LBBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBHomeViewController.m; sourceTree = "<group>"; };
+		E39F3FEE1CF71AD10012421D /* LBBBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBBaseCollectionViewController.h; sourceTree = "<group>"; };
+		E39F3FEF1CF71AD10012421D /* LBBBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBBaseCollectionViewController.m; sourceTree = "<group>"; };
 		E3DAC3CF1CF4AFF3003C0703 /* LittleBlackBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleBlackBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DAC3D31CF4AFF3003C0703 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E3DAC3D51CF4AFF3003C0703 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,17 +81,109 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7995D75C4194C5078809C7 /* libPods-LittleBlackBook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A60FAE640BEE764F781925A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0CED5F886FDF1BF9424B2 /* Pods-LittleBlackBook.debug.xcconfig */,
+				3A07C82F1D014B98161B7698 /* Pods-LittleBlackBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9FCB965B908E6A042B522F68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCA5ABC3AC6654E1A3C9A7E2 /* libPods-LittleBlackBook.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E31639831CF4CD3B0071B10F /* Image Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E39F3FCA1CF6C4C50012421D /* LBBEngine.h */,
+				E39F3FCB1CF6C4C50012421D /* LBBEngine.m */,
+			);
+			name = "Image Manager";
+			sourceTree = "<group>";
+		};
+		E31639841CF4CD660071B10F /* Api Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E39F3FBE1CF60E8E0012421D /* LBBAPIManager.h */,
+				E39F3FBF1CF60E8E0012421D /* LBBAPIManager.m */,
+			);
+			name = "Api Manager";
+			sourceTree = "<group>";
+		};
+		E39F3FB71CF608420012421D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E39F3FB81CF6089F0012421D /* LBBLoginViewController.h */,
+				E39F3FB91CF6089F0012421D /* LBBLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		E39F3FC51CF61A350012421D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E39F3FC11CF61A2C0012421D /* Montserrat-Regular.ttf */,
+				E39F3FC21CF61A2C0012421D /* Montserrat-Bold.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		E39F3FC61CF61B0B0012421D /* Custom Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E39F3FC71CF61B330012421D /* UIFont+LLBFont.h */,
+				E39F3FC81CF61B330012421D /* UIFont+LLBFont.m */,
+			);
+			name = "Custom Categories";
+			sourceTree = "<group>";
+		};
+		E39F3FD91CF6FD530012421D /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E39F3FED1CF71AA60012421D /* Base Collection */,
+				E39F3FDA1CF6FD5C0012421D /* Photo Collection Cell */,
+			);
+			name = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		E39F3FDA1CF6FD5C0012421D /* Photo Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E39F3FDB1CF6FD860012421D /* LBBPhotoCell.h */,
+				E39F3FDC1CF6FD860012421D /* LBBPhotoCell.m */,
+			);
+			name = "Photo Collection Cell";
+			sourceTree = "<group>";
+		};
+		E39F3FED1CF71AA60012421D /* Base Collection */ = {
+			isa = PBXGroup;
+			children = (
+				E39F3FEE1CF71AD10012421D /* LBBBaseCollectionViewController.h */,
+				E39F3FEF1CF71AD10012421D /* LBBBaseCollectionViewController.m */,
+			);
+			name = "Base Collection";
+			sourceTree = "<group>";
+		};
 		E3DAC3C61CF4AFF3003C0703 = {
 			isa = PBXGroup;
 			children = (
 				E3DAC3D11CF4AFF3003C0703 /* LittleBlackBook */,
 				E3DAC3D01CF4AFF3003C0703 /* Products */,
+				5A60FAE640BEE764F781925A /* Pods */,
+				9FCB965B908E6A042B522F68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,9 +211,11 @@
 		E3DAC3D21CF4AFF3003C0703 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E39F3FC51CF61A350012421D /* Fonts */,
 				E3DAC3E11CF4AFF3003C0703 /* Assets.xcassets */,
 				E3DAC3E61CF4AFF3003C0703 /* Info.plist */,
 				E3DAC3D31CF4AFF3003C0703 /* main.m */,
+				E39F3FBC1CF60AD50012421D /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -116,6 +259,7 @@
 		E3DAC3F01CF4B068003C0703 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E39F3FB71CF608420012421D /* Login */,
 				E3DAC3F71CF4B245003C0703 /* Disliked Photos Controller */,
 				E3DAC3F61CF4B237003C0703 /* Liked Photos Controller */,
 				E3DAC3F51CF4B21B003C0703 /* Home Controller */,
@@ -127,6 +271,7 @@
 		E3DAC3F11CF4B07E003C0703 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
+				E31639831CF4CD3B0071B10F /* Image Manager */,
 			);
 			name = Modal;
 			sourceTree = "<group>";
@@ -134,6 +279,12 @@
 		E3DAC3F21CF4B0CA003C0703 /* Core Data Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E39F3FE11CF7033F0012421D /* Media+CoreDataProperties.h */,
+				E39F3FE21CF7033F0012421D /* Media+CoreDataProperties.m */,
+				E39F3FE31CF7033F0012421D /* Media.h */,
+				E39F3FE41CF7033F0012421D /* Media.m */,
+				E39F3FCD1CF6DC770012421D /* CoreDataManager.h */,
+				E39F3FCE1CF6DC770012421D /* CoreDataManager.m */,
 			);
 			name = "Core Data Helpers";
 			sourceTree = "<group>";
@@ -141,6 +292,10 @@
 		E3DAC3F31CF4B0F2003C0703 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E39F3FD91CF6FD530012421D /* Custom Classes */,
+				E39F3FC61CF61B0B0012421D /* Custom Categories */,
+				E31639841CF4CD660071B10F /* Api Manager */,
+				E39F3FBD1CF60D570012421D /* ConfigConstants.h */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -148,6 +303,8 @@
 		E3DAC3F41CF4B1FA003C0703 /* TabBar Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E39F3FE71CF714B00012421D /* LBBTabBarController.h */,
+				E39F3FE81CF714B00012421D /* LBBTabBarController.m */,
 			);
 			name = "TabBar Controller";
 			sourceTree = "<group>";
@@ -155,6 +312,8 @@
 		E3DAC3F51CF4B21B003C0703 /* Home Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E39F3FEA1CF714C90012421D /* LBBHomeViewController.h */,
+				E39F3FEB1CF714C90012421D /* LBBHomeViewController.m */,
 			);
 			name = "Home Controller";
 			sourceTree = "<group>";
@@ -162,6 +321,8 @@
 		E3DAC3F61CF4B237003C0703 /* Liked Photos Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E39F3FD61CF6FC6E0012421D /* LBBLikedPhotoViewController.h */,
+				E39F3FD71CF6FC6E0012421D /* LBBLikedPhotoViewController.m */,
 			);
 			name = "Liked Photos Controller";
 			sourceTree = "<group>";
@@ -169,6 +330,8 @@
 		E3DAC3F71CF4B245003C0703 /* Disliked Photos Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E39F3FDE1CF702780012421D /* LBBDislikedPhotoViewController.h */,
+				E39F3FDF1CF702780012421D /* LBBDislikedPhotoViewController.m */,
 			);
 			name = "Disliked Photos Controller";
 			sourceTree = "<group>";
@@ -180,9 +343,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3DAC3E91CF4AFF3003C0703 /* Build configuration list for PBXNativeTarget "LittleBlackBook" */;
 			buildPhases = (
+				825CAE97CB669C35CCE0EF6B /* 📦 Check Pods Manifest.lock */,
 				E3DAC3CB1CF4AFF3003C0703 /* Sources */,
 				E3DAC3CC1CF4AFF3003C0703 /* Frameworks */,
 				E3DAC3CD1CF4AFF3003C0703 /* Resources */,
+				563CC9EB4FD30335717F0E3F /* 📦 Embed Pods Frameworks */,
+				47E9B47837AADFB4D39FEF0A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +396,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39F3FC41CF61A2C0012421D /* Montserrat-Bold.ttf in Resources */,
+				E39F3FC31CF61A2C0012421D /* Montserrat-Regular.ttf in Resources */,
 				E3DAC3E51CF4AFF3003C0703 /* LaunchScreen.storyboard in Resources */,
 				E3DAC3E21CF4AFF3003C0703 /* Assets.xcassets in Resources */,
 				E3DAC3DD1CF4AFF3003C0703 /* Main.storyboard in Resources */,
@@ -238,14 +406,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47E9B47837AADFB4D39FEF0A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LittleBlackBook/Pods-LittleBlackBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		563CC9EB4FD30335717F0E3F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LittleBlackBook/Pods-LittleBlackBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		825CAE97CB669C35CCE0EF6B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E3DAC3CB1CF4AFF3003C0703 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E39F3FC01CF60E8E0012421D /* LBBAPIManager.m in Sources */,
 				E3DAC3D71CF4AFF3003C0703 /* AppDelegate.m in Sources */,
+				E39F3FCF1CF6DC770012421D /* CoreDataManager.m in Sources */,
+				E39F3FEC1CF714C90012421D /* LBBHomeViewController.m in Sources */,
 				E3DAC3E01CF4AFF3003C0703 /* LittleBlackBook.xcdatamodeld in Sources */,
+				E39F3FE51CF7033F0012421D /* Media+CoreDataProperties.m in Sources */,
+				E39F3FF01CF71AD10012421D /* LBBBaseCollectionViewController.m in Sources */,
 				E3DAC3D41CF4AFF3003C0703 /* main.m in Sources */,
+				E39F3FC91CF61B330012421D /* UIFont+LLBFont.m in Sources */,
+				E39F3FD81CF6FC6E0012421D /* LBBLikedPhotoViewController.m in Sources */,
+				E39F3FE01CF702780012421D /* LBBDislikedPhotoViewController.m in Sources */,
+				E39F3FDD1CF6FD860012421D /* LBBPhotoCell.m in Sources */,
+				E39F3FE91CF714B00012421D /* LBBTabBarController.m in Sources */,
+				E39F3FCC1CF6C4C50012421D /* LBBEngine.m in Sources */,
+				E39F3FE61CF7033F0012421D /* Media.m in Sources */,
+				E39F3FBA1CF6089F0012421D /* LBBLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -346,7 +575,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -355,8 +584,10 @@
 		};
 		E3DAC3EA1CF4AFF3003C0703 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CA0CED5F886FDF1BF9424B2 /* Pods-LittleBlackBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LittleBlackBook/PrefixHeader.pch";
 				INFOPLIST_FILE = LittleBlackBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apps.taseen.LittleBlackBook;
@@ -366,8 +597,10 @@
 		};
 		E3DAC3EB1CF4AFF3003C0703 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A07C82F1D014B98161B7698 /* Pods-LittleBlackBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LittleBlackBook/PrefixHeader.pch";
 				INFOPLIST_FILE = LittleBlackBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apps.taseen.LittleBlackBook;
@@ -394,6 +627,7 @@
 				E3DAC3EB1CF4AFF3003C0703 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

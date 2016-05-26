@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "UIFont+LLBFont.h"
+#import "CoreDataManager.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self appAppearance];
     return YES;
+}
+
+- (void)appAppearance {
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont llbFontWithSize:17], NSForegroundColorAttributeName :[UIColor whiteColor]}];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont llbFontWithSize:15]} forState:UIControlStateNormal];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
