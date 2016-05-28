@@ -17,5 +17,5 @@ typedef void (^failureSessionBlock)(NSURLSessionDataTask *task, NSError *error);
 
 + (LBBAPIManager *) sharedManager;
 
-- (void)hello:(completionSessionBlock)success failure:(failureSessionBlock)fail;
+- (void)getFlikrPhotos:(completionSessionBlock)success failure:(failureSessionBlock)fail;
 @end

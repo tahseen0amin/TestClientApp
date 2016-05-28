@@ -7,13 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+
 #import "Media+CoreDataProperties.h"
+#import "CoreDataManager.h"
+#import "LBBAPIManager.h"
 
 @interface LBBEngine : NSObject
 
 +(LBBEngine *)sharedEngine;
 
+- (void)getRecentPhotosFromFlikr;
+- (NSArray *)fetchPhotosToShowInHome;
 - (NSArray *)fetchLikedPhotosFromCoreData;
 - (NSArray *)fetchDisLikedPhotosFromCoreData;
-- (void)changedStatusOfMedia:(Media *)media ToStatus:(MediaSelectedState)status;
+- (void)changedStatusOfMedia:(Media *)media image:(UIImage *)img ToStatus:(MediaSelectedState)status;
 @end

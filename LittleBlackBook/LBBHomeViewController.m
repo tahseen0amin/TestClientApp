@@ -10,4 +10,9 @@
 
 @implementation LBBHomeViewController
 
+
+- (void)viewDidLoad {
+    [[LBBEngine sharedEngine] getRecentPhotosFromFlikr];
+}
+
 @end

@@ -24,25 +24,37 @@
     self = [super initWithBaseURL:url];
     
     if (self) {
-//        self.responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingAllowFragments];
-//        self.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"application/json"];
-//        self.requestSerializer = [AFJSONRequestSerializer serializer];
-//        [self.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+        self.responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingAllowFragments];
+        self.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/javascript",nil];
+        self.requestSerializer = [AFJSONRequestSerializer serializer];
+        [self.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     }
     
     return self;
 }
 
-- (void)hello:(completionSessionBlock)success failure:(failureSessionBlock)fail {
+- (void)getFlikrPhotos:(completionSessionBlock)success failure:(failureSessionBlock)fail {
     
-    NSString *accessToken = [[NSUserDefaults standardUserDefaults] objectForKey:kUserAccessTokenKey];
-    NSString *urlString = [NSString stringWithFormat:@"%@?access_token=%@",kSearchTagEndpoint,accessToken];
+    NSString *urlString = [NSString stringWithFormat:@"%@",FLIKR_RECENT_PHOTOS];
     
     [self GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
+        success(responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
+        fail(task,error);
     }];
 }
+
+//- (void)hello:(completionSessionBlock)success failure:(failureSessionBlock)fail {
+//    
+//    NSString *accessToken = [[NSUserDefaults standardUserDefaults] objectForKey:kUserAccessTokenKey];
+//    NSString *urlString = [NSString stringWithFormat:@"%@?access_token=%@",kSearchTagEndpoint,accessToken];
+//    
+//    [self GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+//        
+//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+//        
+//    }];
+//}
+
 
 @end

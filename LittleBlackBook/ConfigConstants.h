@@ -15,6 +15,11 @@
 #define kRedirectUrl  @"http://taazuh.co.uk"
 #define kUserAccessTokenKey @"UserAccessTokenKey"
 
+//Flikr
+#define FLIKR_API_KEY @"f19871015cd53a8fd76e62a47fd0b5a7"
+#define FLIKR_RECENT_PHOTOS @"https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=f19871015cd53a8fd76e62a47fd0b5a7&format=json&extras=url_m&nojsoncallback=?"
+
+
 
 // Endpoints
 #define kUserMediaRecentEndpoint  @"users/%@/media/recent";
