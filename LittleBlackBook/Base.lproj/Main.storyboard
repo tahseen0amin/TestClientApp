@@ -63,7 +63,7 @@
                             <outlet property="delegate" destination="Ueh-gV-SGT" id="yWT-jg-mbi"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Liked" image="ic_home_white" id="udc-1Y-cJ4"/>
+                    <tabBarItem key="tabBarItem" title="Liked" image="yes_home" id="udc-1Y-cJ4"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pdl-HW-TOr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -268,7 +268,7 @@
                             <outlet property="delegate" destination="29E-fK-RCy" id="XdI-kI-Eoh"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Disliked" image="ic_home_white" id="bAU-TG-W7J"/>
+                    <tabBarItem key="tabBarItem" title="Disliked" image="no_hom" id="bAU-TG-W7J"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vvW-8O-4Xd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -277,5 +277,7 @@
     </scenes>
     <resources>
         <image name="ic_home_white" width="24" height="24"/>
+        <image name="no_hom" width="24" height="24"/>
+        <image name="yes_home" width="24" height="24"/>
     </resources>
 </document>
