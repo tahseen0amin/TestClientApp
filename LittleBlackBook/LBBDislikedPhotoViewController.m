@@ -27,8 +27,9 @@
     [self getData];
 }
 
+
 - (void)getData {
-    self.dataArray = [[LBBEngine sharedEngine] fetchLikedPhotosFromCoreData];
+    self.dataArray = [[LBBEngine sharedEngine] fetchDisLikedPhotosFromCoreData];
     [self.collectionView reloadData];
 }
 

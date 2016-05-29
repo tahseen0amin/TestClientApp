@@ -11,6 +11,7 @@
 
     #import "ConfigConstants.h"
     #import "LBBEngine.h"
+#import "AppDelegate.h"
 
 #endif /* PrefixHeader_pch */
 

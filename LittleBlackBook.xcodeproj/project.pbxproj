@@ -22,6 +22,8 @@
 		E39F3FE91CF714B00012421D /* LBBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FE81CF714B00012421D /* LBBTabBarController.m */; };
 		E39F3FEC1CF714C90012421D /* LBBHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FEB1CF714C90012421D /* LBBHomeViewController.m */; };
 		E39F3FF01CF71AD10012421D /* LBBBaseCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E39F3FEF1CF71AD10012421D /* LBBBaseCollectionViewController.m */; };
+		E3BFAD8A1CFAD981000AA4FA /* PhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3BFAD891CFAD981000AA4FA /* PhotoView.m */; };
+		E3BFAD8C1CFADB33000AA4FA /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3BFAD8B1CFADB33000AA4FA /* PhotoView.xib */; };
 		E3DAC3D41CF4AFF3003C0703 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DAC3D31CF4AFF3003C0703 /* main.m */; };
 		E3DAC3D71CF4AFF3003C0703 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3DAC3D61CF4AFF3003C0703 /* AppDelegate.m */; };
 		E3DAC3DD1CF4AFF3003C0703 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3DAC3DB1CF4AFF3003C0703 /* Main.storyboard */; };
@@ -65,6 +67,9 @@
 		E39F3FEB1CF714C90012421D /* LBBHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBHomeViewController.m; sourceTree = "<group>"; };
 		E39F3FEE1CF71AD10012421D /* LBBBaseCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBBBaseCollectionViewController.h; sourceTree = "<group>"; };
 		E39F3FEF1CF71AD10012421D /* LBBBaseCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LBBBaseCollectionViewController.m; sourceTree = "<group>"; };
+		E3BFAD881CFAD981000AA4FA /* PhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoView.h; sourceTree = "<group>"; };
+		E3BFAD891CFAD981000AA4FA /* PhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoView.m; sourceTree = "<group>"; };
+		E3BFAD8B1CFADB33000AA4FA /* PhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
 		E3DAC3CF1CF4AFF3003C0703 /* LittleBlackBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittleBlackBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3DAC3D31CF4AFF3003C0703 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E3DAC3D51CF4AFF3003C0703 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -175,6 +180,16 @@
 				E39F3FEF1CF71AD10012421D /* LBBBaseCollectionViewController.m */,
 			);
 			name = "Base Collection";
+			sourceTree = "<group>";
+		};
+		E3BFAD841CFAD8CA000AA4FA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E3BFAD881CFAD981000AA4FA /* PhotoView.h */,
+				E3BFAD891CFAD981000AA4FA /* PhotoView.m */,
+				E3BFAD8B1CFADB33000AA4FA /* PhotoView.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		E3DAC3C61CF4AFF3003C0703 = {
@@ -312,6 +327,7 @@
 		E3DAC3F51CF4B21B003C0703 /* Home Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E3BFAD841CFAD8CA000AA4FA /* Views */,
 				E39F3FEA1CF714C90012421D /* LBBHomeViewController.h */,
 				E39F3FEB1CF714C90012421D /* LBBHomeViewController.m */,
 			);
@@ -401,6 +417,7 @@
 				E3DAC3E51CF4AFF3003C0703 /* LaunchScreen.storyboard in Resources */,
 				E3DAC3E21CF4AFF3003C0703 /* Assets.xcassets in Resources */,
 				E3DAC3DD1CF4AFF3003C0703 /* Main.storyboard in Resources */,
+				E3BFAD8C1CFADB33000AA4FA /* PhotoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +492,7 @@
 				E39F3FCC1CF6C4C50012421D /* LBBEngine.m in Sources */,
 				E39F3FE61CF7033F0012421D /* Media.m in Sources */,
 				E39F3FBA1CF6089F0012421D /* LBBLoginViewController.m in Sources */,
+				E3BFAD8A1CFAD981000AA4FA /* PhotoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

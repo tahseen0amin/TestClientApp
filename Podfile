@@ -9,4 +9,5 @@ target 'LittleBlackBook' do
   pod "BIZTinderCardStack"
   pod "AFNetworking", "~> 3.0"
   pod "DZNEmptyDataSet"
+  pod "Haneke", "~> 1.0"
 end

@@ -7,6 +7,7 @@
 //
 
 #import "LBBEngine.h"
+#import "AppDelegate.h"
 
 @implementation LBBEngine
 
@@ -38,14 +39,33 @@
 - (void)storePhotosInCoreData:(NSArray *)photos {
     
     for (NSDictionary *dic in photos) {
-        Media* media =[NSEntityDescription insertNewObjectForEntityForName:@"Media" inManagedObjectContext:[[CoreDataManager sharedManager] managedObjectContext]];
-        media.mediaID = dic[@"id"];
-        media.mediaURL = dic[@"url_m"];
-        media.status = [NSNumber numberWithInt:MediaSelectedStateUNDECIDED];
+        if (![self findDuplicateForMediaID:[NSNumber numberWithInteger:[dic[@"id"] integerValue]]]) {
+            Media* media =[NSEntityDescription insertNewObjectForEntityForName:@"Media" inManagedObjectContext:[(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]];
+            media.mediaID = [NSNumber numberWithInteger:[dic[@"id"] integerValue]];
+            media.mediaURL = [dic[@"url_m"] description];
+            media.status = [NSNumber numberWithInt:MediaSelectedStateUNDECIDED];
+        }
     }
     
-    [[CoreDataManager sharedManager] saveContext];
+    [(AppDelegate *)[[UIApplication sharedApplication] delegate] saveContext];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"PhotoSaved" object:nil];
+}
+
+// checkForDuplicate
+-(BOOL)findDuplicateForMediaID:(NSNumber *)mediaID {
+    NSArray *fetchedResults = nil;
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Media"];
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"mediaID" ascending:YES]];
+    request.predicate =[NSPredicate predicateWithFormat:@"mediaID==%@",mediaID];
+    
+    NSManagedObjectContext *managedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
+    NSError *error;
+    fetchedResults =  [managedObjectContext executeFetchRequest:request error:&error];
+    if (fetchedResults.count>0) {
+        return YES;
+    } else {
+        return NO;
+    }
 }
 
 // fetch all media with state not changed for showing in home
@@ -53,9 +73,10 @@
     NSArray *fetchedResults = nil;
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Media"];
     request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"mediaID" ascending:YES]];
-    request.predicate =nil;
+    request.predicate =[NSPredicate predicateWithFormat:@"status==%d",MediaSelectedStateUNDECIDED];
+    [request setFetchLimit:10];
     
-    NSManagedObjectContext *managedObjectContext = [[CoreDataManager sharedManager] managedObjectContext];
+    NSManagedObjectContext *managedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
     NSError *error;
     fetchedResults =  [managedObjectContext executeFetchRequest:request error:&error];
     
@@ -69,7 +90,7 @@
     request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"mediaID" ascending:YES]];
     request.predicate = [NSPredicate predicateWithFormat:@"status==%d",MediaSelectedStateLIKED];
     
-    NSManagedObjectContext *managedObjectContext = [[CoreDataManager sharedManager] managedObjectContext];
+    NSManagedObjectContext *managedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
     NSError *error;
     fetchedResults =  [managedObjectContext executeFetchRequest:request error:&error];
     return fetchedResults;
@@ -82,7 +103,7 @@
     request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"mediaID" ascending:YES]];
     request.predicate = [NSPredicate predicateWithFormat:@"status==%d",MediaSelectedStateDISLIKED];
     
-    NSManagedObjectContext *managedObjectContext = [[CoreDataManager sharedManager] managedObjectContext];
+    NSManagedObjectContext *managedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
     NSError *error;
     fetchedResults =  [managedObjectContext executeFetchRequest:request error:&error];
     return fetchedResults;
